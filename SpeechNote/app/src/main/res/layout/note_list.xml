@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:background="#ffffff"
+    android:layout_marginBottom="2dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp"
+        android:id="@+id/txtNoteId"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.8"
+        android:hint="Note_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp"
+        android:justificationMode="inter_word"
+        android:textSize="15sp"
+        android:id="@+id/txtNoteContent"
+        android:layout_marginRight="5dp"
+        android:layout_weight="6.7"
+        android:hint="Content Note"
+        android:layout_width="0dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp"
+        android:id="@+id/txtNoteDate"
+        android:layout_weight="2.5"
+        android:hint="Date create"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

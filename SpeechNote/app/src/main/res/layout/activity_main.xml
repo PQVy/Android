@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.stacktips.speechtotext.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSpeakContainer"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <EditText
+            android:justificationMode="inter_word"
+            android:hint="Tap on mic to create note or use keyboard"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:id="@+id/voiceInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnSpeakContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_microphone_2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:textColor="#ffffff"
+                android:background="#008577"
+                android:id="@+id/btnSaveNote"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Save Note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSpeak"
+                android:layout_margin="10dp"
+                 />
+            <Button
+                android:textColor="#ffffff"
+                android:background="#008577"
+                android:id="@+id/btnListNote"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="List Note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
