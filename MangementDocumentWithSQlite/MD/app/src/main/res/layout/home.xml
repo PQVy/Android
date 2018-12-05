@@ -1,0 +1,71 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Number of Document" />
+
+    <EditText
+        android:id="@+id/edtUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Release Unit" />
+
+    <EditText
+        android:id="@+id/edtDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Description" />
+
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_weight="5"
+            android:background="#bde6f5"
+            android:textAllCaps="false"
+            android:id="@+id/btnChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Image" />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:layout_weight="5"
+                android:background="#bde6f5"
+                android:textAllCaps="false"
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_weight="8"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</LinearLayout>
